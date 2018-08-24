@@ -1,0 +1,67 @@
+    <!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- <script src="js/script.js"></script>   -->
+        <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+
+        <script>
+            $(document).ready(function() {
+
+                $("#add").click(function() {
+                     $("#janela").addClass("efeito");
+                })
+
+                $("#remove").click(function() {
+
+                    $("#janela").removeClass("efeito");
+                })
+
+            });
+        </script>
+
+        <style>
+             .efeito {
+                background-color: blue;
+                width: 300px;
+                height: 500px;
+                border: 2px solid #000;
+            }  
+        </style>
+         
+    </head>
+
+    <body>
+
+        <input type="button" id="add"      value="Add" >
+        <input type="button" id="remove"  value="Remove">
+        
+        
+        <div id="janela">
+            <h3>Baixo em Cima</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+    </body>
+
+</html>
